@@ -3,5 +3,3 @@ function kleur_aanpassen() {
     boo.style.color = 'blue';
     boo.textContent = "Inhoud aangepast!"
 }
-
-kleur_aanpassen()
