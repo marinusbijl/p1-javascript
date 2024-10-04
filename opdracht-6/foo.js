@@ -14,4 +14,4 @@ function calculateMinutes(secs) {
     console.log(secs / 60);
 }
 
-calculateMinutes(3600)
+calculateMinutes(3600);

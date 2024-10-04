@@ -3,17 +3,15 @@ let product = 60;
 
 let budgetElement = document.getElementById("budget");
 budgetElement.textContent = "Budget: " + budget + " euro";
-let productElement = document.getElementById("product");
-productElement.textContent = "Product: " + product + " euro";
-
+let prijsElement = document.getElementById("prijs");
 let validatieElement = document.getElementById("validatie");
 
-function kopen() {
-    if (budget >= product) {
-        validatieElement.textContent = "U heeft genoeg geld!"
-        validatieElement.style.color = "green"
+function submit() {
+    if (budget >= prijsElement.value) {
+        validatieElement.textContent = "U heeft genoeg geld!";
+        validatieElement.style.color = "green";
     } else {
-        validatieElement.textContent = "Helaas, te weinig geldt"
-        validatieElement.style.color = "red"
+        validatieElement.textContent = "Helaas, te weinig geldt";
+        validatieElement.style.color = "red";
     }
 }
