@@ -21,7 +21,7 @@ let productPrompt = prompt("Hoeveel kost het product dat je wilt kopen?", "1");
 if (productPrompt != null) {
     product = Number(productPrompt)
 
-    if (budget >= products) {
+    if (budget >= product) {
         validatieElement.textContent = "U heeft genoeg geld!";
         validatieElement.style.color = "green";
     } else {
