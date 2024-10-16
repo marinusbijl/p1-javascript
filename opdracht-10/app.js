@@ -3,7 +3,11 @@ let getal1Element = document.getElementById("getal1");
 let getal2Element = document.getElementById("getal2");
 
 function answer(result) {
-    antwoordElement.textContent = "Het antwoord is: " + result
+    if (result <= 0) {
+        antwoordElement.textContent = "Het getal is te laag"
+    } else {
+        antwoordElement.textContent = "Het antwoord is: " + result
+    }
 }
 
 function multiply() {
